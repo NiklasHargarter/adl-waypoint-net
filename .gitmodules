@@ -1,0 +1,3 @@
+[submodule "external/Conv-Adapter"]
+	path = external/Conv-Adapter
+	url = https://github.com/Hhhhhhao/Conv-Adapter.git
