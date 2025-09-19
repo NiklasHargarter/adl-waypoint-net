@@ -1,0 +1,74 @@
+[metadata]
+model_name = "ResNetGRUWaypointNet_convadapter"
+timestamp = "20250910_161525"
+total_training_time_seconds = 7342.182387113571
+total_training_time_hours = 2.0394951075315477
+model_save_path = "models/ResNetGRUWaypointNet_convadapter_20250910_161525.pth"
+
+[hyperparameters]
+batch_size = 64
+learning_rates = [
+    0.000657963412215599,
+    0.0002,
+]
+weight_decays = [
+    0.0001,
+    0.0001,
+]
+optimizer = "AdamW"
+num_workers = 16
+prefetch_factor = 2
+device = "cuda"
+num_epochs = 20
+dataset_root = "data/full/"
+variant = "convadapter"
+cosine_lr_scheduling = true
+gradient_clipping = true
+max_norm = 1.0
+
+[model_stats]
+total_parameters = 24576762
+trainable_parameters = 1068730
+trainable_percentage = 4.348538672425603
+
+[training_stats]
+epochs_completed = 9
+final_train_loss = 0.17458055788015653
+final_val_loss = 0.28781700994507453
+epochs = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+]
+train_losses = [
+    0.6097086010940256,
+    0.36817070956970216,
+    0.3045400119398297,
+    0.26888276264523747,
+    0.2414089578702497,
+    0.22238527964431234,
+    0.20458219664111787,
+    0.18978277864466067,
+    0.17458055788015653,
+]
+val_losses = [
+    0.4294408563162806,
+    0.3956567914114397,
+    0.33515348000094763,
+    0.3102921549882966,
+    0.31011214526223235,
+    0.31370607895360697,
+    0.29319733708522744,
+    0.2869862232333528,
+    0.28781700994507453,
+]
+
+[test_results]
+ade = 0.3999381363391876
+fde = 0.6841416954994202

@@ -1,0 +1,73 @@
+[metadata]
+model_name = "ResNetGRUWaypointNet_lora"
+timestamp = "20250910_121114"
+total_training_time_seconds = 7253.724460840225
+total_training_time_hours = 2.014923461344507
+model_save_path = "models/ResNetGRUWaypointNet_lora_20250910_121114.pth"
+
+[hyperparameters]
+batch_size = 64
+learning_rates = [
+    0.0005,
+    0.0002,
+]
+weight_decays = [
+    0.0,
+    0.01,
+]
+optimizer = "AdamW"
+num_workers = 16
+prefetch_factor = 2
+device = "cuda"
+num_epochs = 20
+dataset_root = "data/full/"
+variant = "lora"
+cosine_lr_scheduling = false
+gradient_clipping = false
+
+[model_stats]
+total_parameters = 24893666
+trainable_parameters = 1385634
+trainable_percentage = 5.566211099642777
+
+[training_stats]
+epochs_completed = 9
+final_train_loss = 0.16979153583203913
+final_val_loss = 0.29010654686615595
+epochs = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+]
+train_losses = [
+    0.6543816138753906,
+    0.4156443161286115,
+    0.33371331743543226,
+    0.2811024256053602,
+    0.24718979372217412,
+    0.22146151927934876,
+    0.20100786790209518,
+    0.18446970386683145,
+    0.16979153583203913,
+]
+val_losses = [
+    0.4966858367652641,
+    0.42072030064261073,
+    0.35874423315766657,
+    0.33698022646232717,
+    0.30573703188412976,
+    0.31092447805290735,
+    0.290721096599574,
+    0.2826905793738687,
+    0.29010654686615595,
+]
+
+[test_results]
+ade = 1.3680341243743896
+fde = 2.0657503604888916

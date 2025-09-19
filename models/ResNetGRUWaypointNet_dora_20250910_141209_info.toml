@@ -1,0 +1,70 @@
+[metadata]
+model_name = "ResNetGRUWaypointNet_dora"
+timestamp = "20250910_141209"
+total_training_time_seconds = 7395.474322080612
+total_training_time_hours = 2.05429842280017
+model_save_path = "models/ResNetGRUWaypointNet_dora_20250910_141209.pth"
+
+[hyperparameters]
+batch_size = 64
+learning_rates = [
+    0.0005,
+    0.0002,
+]
+weight_decays = [
+    0.0,
+    0.01,
+]
+optimizer = "AdamW"
+num_workers = 16
+prefetch_factor = 2
+device = "cuda"
+num_epochs = 20
+dataset_root = "data/full/"
+variant = "dora"
+cosine_lr_scheduling = false
+gradient_clipping = false
+
+[model_stats]
+total_parameters = 24915170
+trainable_parameters = 1407138
+trainable_percentage = 5.647715829352157
+
+[training_stats]
+epochs_completed = 8
+final_train_loss = 0.18510766342155657
+final_val_loss = 0.2953728927566118
+epochs = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+]
+train_losses = [
+    0.6771782679277506,
+    0.42928844823595097,
+    0.34001120645439803,
+    0.28620238267774767,
+    0.24916167440249437,
+    0.2236617172882413,
+    0.20359680181853881,
+    0.18510766342155657,
+]
+val_losses = [
+    0.5732887268247245,
+    0.39838542741569644,
+    0.3556242409985042,
+    0.3331413736720615,
+    0.3147652199781201,
+    0.29680778406677966,
+    0.30390020900957504,
+    0.2953728927566118,
+]
+
+[test_results]
+ade = 1.6521248817443848
+fde = 2.4039299488067627

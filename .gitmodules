@@ -1,6 +1,6 @@
-[submodule "external/Conv-Adapter"]
-	path = external/Conv-Adapter
-	url = https://github.com/Hhhhhhao/Conv-Adapter.git
 [submodule "external/transfuser"]
 	path = external/transfuser
 	url = https://github.com/autonomousvision/transfuser.git
+[submodule "external/Conv_Adapter"]
+	path = external/Conv_Adapter
+	url = https://github.com/Hhhhhhao/Conv-Adapter.git
